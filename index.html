@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - полный пример</title>
+</head>
+<body>
+    <!-- Шапка страницы -->
+     <header class="header">
+        <div class="logo">Мой сайт</div>
+        <nav class="nav">
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="#">Контакты</a>
+        </nav>
+     </header>
+
+     <!-- 1. Просто в ряд -->
+      <section>
+        <h2>1. Просто в ряд</h2>
+        <p class="hint">display: flex - дети выстроились в строку.</p>
+        <div class="row">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+      </section>
+
+      <!-- 2. Центрирование-->
+       <section>
+        <h2>2. Центрирование по обеим осям</h2>
+        <p class="hint">justify-content + align-items.</p>
+        <div class="center-box">
+            <div class="items">Я по центру</div>
+        </div>
+       </section>
+
+       <!-- 3. space-between -->
+       <section>
+        <h3>3. Равномерное распрделение</h3>
+        <p class="hint">Первый прижат влево, последний - вправо.</p>
+        <div class="space-between">
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+        </div>
+       </section>
+
+       <!-- 4. Адаптивные карточки -->
+       <section>
+        <h3>3. Адаптивные карточки</h3>
+        <p class="hint">
+            Сузьте окно браузера - карточки переносится и не становятся уже 220px.
+        </p>
+        <div class="cards">
+            <div class="card">
+                <h3>Карточка 1</h3>
+                Короткое описание карточки.
+            </div>
+            <div class="card">
+                <h3>Карточка 2</h3>
+                Короткое описание карточки
+            </div> 
+            <div class="card">
+                <h3>Карточка 3</h3>
+                Короткое описание карточки.
+            </div>
+            <div class="card">
+                <h3>Карточка 4</h3>
+                Короткое описание карточки.
+            </div>  
+        </div>
+       </section>
+
+       <!-- 4. Сайдбар + контент -->
+       <section>
+        <h2>5. Сайдбар фиксированной ширины + контент</h2>
+        <p class="hint">flex: 1 у контента забирает все свободное место.</p>
+        <div class="layout">
+            <aside class="sidebar">Меню</aside>
+            <main class="content">Основной контент</main>
+        </div>
+       </section>
+       
+       <!-- 6. Три колонки -->
+       <section>
+        <h2>6. Три колонки</h2>
+        <p class="hint">
+            Боковые фиксированы, середина растет. На мобильном - столбец.
+        </p>
+        <div class="columns">
+            <div class="col-left">Левая колонка</div>
+            <div class="col-main">Основная колонка</div>
+            <div class="col-right">Правая колонка</div>
+        </div>
+       </section>
+
+        <div class="container">
+            <div class="item" style="order: 2">Элемент 1</div>
+            <div class="item" style="order: -1">Элемент 2</div>
+            <div class="item">Элемент 3</div>
+        </div>
+</body>
+</html>

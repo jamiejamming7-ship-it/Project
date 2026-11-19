@@ -1,0 +1,65 @@
+/* ==== Общий сброс и база ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+    padding: 24px;
+}
+section {
+    margin-bottom: 40px;
+}
+h2 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+p.hint {
+    margin-bottom: 12px;
+    color: #777;
+    font-size: 14px;
+}
+.item {
+    padding: 16px;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 60px;
+}
+
+/* ==== 1. Просто в ряд ==== */
+.row {
+    display: flex;
+    gap: 12px;
+}
+
+/* ==== 2. Центрирование по обеим осям ==== */
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    border: 2px dashed #bbb;
+}
+.center-box .item {
+    background: #ffeb3b;
+}
+
+/* ==== 3. space-between ==== */
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.space-between .item {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+}
+
